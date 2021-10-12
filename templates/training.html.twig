@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title%}{{ video.dateTraining|date('d-m-Y') }}{% endblock %}
+
+{% block body %}
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="blog-detail-ct">
+        <h1>Entraînement du : {{ video.dateTraining|date('d-m-Y') }}</h1>
+        <video controls width="100%">
+            <source src="{{ asset('videos/' ~ video.dateTraining|date('Y_m_d') ~ '.mp4') }}"
+                    type="video/mp4">
+            Désolé, votre navigateur ne supporte pas cette vidéo.
+        </video>
+        <br>
+        <br>
+{#        <div class="comments">#}
+{#            <h4>{{ nbComment }} Commentaires</h4>#}
+{#            {% for comment in comments %}#}
+{#            <div class="cmt-item flex-it">#}
+{#                <div class="author-infor">#}
+{#                    <div class="flex-it2">#}
+{#                        <h6><a href="#">{{ comment.firstname }} {{ comment.lastname }}</a></h6> <span class="time"> - {{ comment.date|date('d/m/Y - H:i') }}</span>#}
+{#                    </div>#}
+{#                    <p>{{ comment.comment }}</p>#}
+{#                </div>#}
+{#            </div>#}
+{#            {% endfor %}#}
+{#        </div>#}
+{#        <br>#}
+{#        <div class="comment-form">#}
+{#            <h4>Laisser un commentaire sur la vidéo</h4>#}
+{#            <form action="#">#}
+{#                <div class="row">#}
+{#                    <div class="col-md-6">#}
+{#                        <input type="text" placeholder="Votre Prénom" disabled>#}
+{#                    </div>#}
+{#                    <div class="col-md-6">#}
+{#                        <input type="text" placeholder="Votre Nom" disabled>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="row">#}
+{#                    <div class="col-md-12">#}
+{#                        <textarea name="message" id="" placeholder="Votre commentaire" disabled></textarea>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <input class="submit" type="submit" placeholder="submit" disabled>#}
+{#            </form>#}
+{#        </div>#}
+    </div>
+</div>
+{% endblock %}

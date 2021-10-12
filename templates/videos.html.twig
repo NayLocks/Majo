@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Entraînements{% endblock %}
+
+{% block body %}
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="flex-wrap-movielist mv-grid-fw">
+
+            {% for video in videos %}
+                <div class="movie-item-style-2 movie-item-style-1">
+                    <a href="{{ path('video', { 'id': video.id }) }}">
+                        <img src="{{ asset('images/background_items.jpg') }}" alt="">
+                        <div class="mv-item-infor">
+                            <h6 style="text-align: center">{{ video.dateTraining|date('d/m/Y') }}</h6>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
