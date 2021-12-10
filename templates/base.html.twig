@@ -1,137 +1,175 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Sirène de Thourotte > {% block title %}{% endblock %}</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
-        <link rel="profile" href="#">
+<html lang="en" data-arp-injected="true"><head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  <meta name="apple-itunes-app" content="app-id=878517979">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	  <link rel="shortcut icon" href="https://adbeus.com/wp-content/uploads/2015/02/adbeus_icon-02.png" type="image/png">
 
-        <!--Google Font-->
-        <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
-        <link rel="icon" type="image/ico" sizes="16x16" href="{{ asset('images/logo.ico') }}">
-        <!-- Mobile specific meta -->
-        <meta name=viewport content="width=device-width, initial-scale=1">
-        <meta name="format-detection" content="telephone-no">
 
-        <!-- CSS files -->
-        <link rel="stylesheet" href="{{ asset('css/plugins.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-        {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
-        {% endblock %}
+		<link href="//fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
-    </head>
-    <header class="ht-header">
-        <div class="container">
-            <nav class="navbar navbar-default navbar-custom">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header logo">
-                    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <div id="nav-icon1">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                    <a href="{{ path('dashboard') }}"><img class="logo" src="{{ asset('images/logo.png') }}" alt="" width="119" height="58"></a>
+		<link rel="author" href="https://adbeus.com/humans.txt">
+
+	 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v17.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>{% block title %}{% endblock %}</title>
+	<meta name="description" content="We travel the world to find the best indie coffee shops. You can use our website, our apps or our bots to get the nearest coffee shops with the best coffee.">
+	<link rel="canonical" href="https://adbeus.com/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Best Coffee Shops Around The World | We Love Coffee | adbeus">
+	<meta property="og:description" content="We travel the world to find the best indie coffee shops. You can use our website, our apps or our bots to get the nearest coffee shops with the best coffee.">
+	<meta property="og:url" content="https://adbeus.com/">
+	<meta property="og:site_name" content="adbeus">
+	<meta property="article:modified_time" content="2017-01-03T13:56:21+00:00">
+	<meta name="twitter:card" content="summary">
+	<script src="https://connect.facebook.net/en_US/sdk.js?hash=3f383aeafc64ec394d9d3995f8bd297b" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/m06grExW4V7Mx9dUDdjaAdGn85mnxxcn/analytics.min.js"></script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://adbeus.com/#organization","name":"adbeus","url":"https://adbeus.com/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://adbeus.com/#logo","inLanguage":"en-US","url":"https://adbeus.com/wp-content/uploads/2016/11/adbeus_icon-02-1.png","contentUrl":"https://adbeus.com/wp-content/uploads/2016/11/adbeus_icon-02-1.png","width":88,"height":95,"caption":"adbeus"},"image":{"@id":"https://adbeus.com/#logo"}},{"@type":"WebSite","@id":"https://adbeus.com/#website","url":"https://adbeus.com/","name":"adbeus","description":"the best independent coffee shops / indie coffee","publisher":{"@id":"https://adbeus.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://adbeus.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://adbeus.com/#webpage","url":"https://adbeus.com/","name":"Best Coffee Shops Around The World | We Love Coffee | adbeus","isPartOf":{"@id":"https://adbeus.com/#website"},"about":{"@id":"https://adbeus.com/#organization"},"datePublished":"2016-08-04T13:48:19+00:00","dateModified":"2017-01-03T13:56:21+00:00","description":"We travel the world to find the best indie coffee shops. You can use our website, our apps or our bots to get the nearest coffee shops with the best coffee.","breadcrumb":{"@id":"https://adbeus.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://adbeus.com/"]}]},{"@type":"BreadcrumbList","@id":"https://adbeus.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//code.jquery.com">
+<link rel="dns-prefetch" href="//s.w.org">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/adbeus.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://adbeus.com/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="curation-ambassadors-css" href="https://adbeus.com/wp-content/plugins/curation-ambassadors/assets/css/curation-ambassadors.css" type="text/css" media="all">
+<link rel="stylesheet" id="default-icon-styles-css" href="https://adbeus.com/wp-content/plugins/svg-vector-icon-plugin/public/../admin/css/wordpress-svg-icon-plugin-style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="udefault-css" href="https://adbeus.com/wp-content/plugins/ultimate-wp-query-search-filter/themes/default.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpgeo-css" href="https://adbeus.com/wp-content/plugins/wp-geo/css/wp-geo.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-pagenavi-css" href="https://adbeus.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css" type="text/css" media="all">
+<link rel="stylesheet" id="materialize-min-stylesheet-css" href="https://adbeus.com/wp-content/themes/adbeus/css/materialize.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="materialize-stylesheet-css" href="https://adbeus.com/wp-content/themes/adbeus/css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="https://adbeus.com/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://adbeus.com/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript">
+	!function(){var analytics=window.analytics=window.analytics||[];if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.0";
+		window.analytics.load("m06grExW4V7Mx9dUDdjaAdGn85mnxxcn");
+	window.analytics.page();
+	  }}();
+</script>
+<link rel="https://api.w.org/" href="https://adbeus.com/wp-json/"><link rel="alternate" type="application/json" href="https://adbeus.com/wp-json/wp/v2/pages/6146"><link rel="shortlink" href="https://adbeus.com/">
+<link rel="alternate" type="application/json+oembed" href="https://adbeus.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fadbeus.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://adbeus.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fadbeus.com%2F&amp;format=xml">
+
+			<script type="text/javascript">
+			//<![CDATA[
+
+			// WP Geo default settings
+			var wpgeo_w = '';
+			var wpgeo_h = '300px';
+			var wpgeo_type = 'G_NORMAL_MAP';
+			var wpgeo_zoom = 15;
+			var wpgeo_controls = 'GLargeMapControl3D';
+			var wpgeo_controltypes = 'G_NORMAL_MAP,G_SATELLITE_MAP,G_HYBRID_MAP,G_PHYSICAL_MAP';
+			var wpgeo_scale = 'N';
+			var wpgeo_overview = 'N';
+
+			//]]>
+			</script>
+				<script src="https://adbeus.com/wp-includes/js/wp-emoji-release.min.js" type="text/javascript" defer=""></script><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-6146" style="">
+
+<script type="text/javascript">
+
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId: "1597071747242627",
+			xfbml: true,
+			version: "v2.6"
+		});
+
+	};
+
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) { return; }
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
+</script>
+
+ <div class="navbar-fixed">
+	<nav class="white " role="navigation">
+		<div class="container">
+		  <div class="nav-wrapper">
+		  	<div id="logo-container">
+				<a href="{{ path('dashboard') }}"><img width="40" class="icon hide-on-med-and-down" src="https://adbeus.com/wp-content/uploads/2015/02/adbeus_icon-02.png" alt=""></a>
+			  	<a href="{{ path('dashboard') }}" class="brand-logo">Sirène de Thourotte</a>
+		  	</div>
+
+			  <div class="menu-adbeus-container">
+					<ul id="menu-adbeus" class="right hide-on-med-and-down"><li id="menu-item-2025" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2025"><a href="{{ path('dashboard') }}">Accueil</a></li>
+						<li id="menu-item-5057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5057"><a href="#">Ajouter une vidéo</a></li>
+						<li id="menu-item-5057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5057"><a href="#">Changer la photo</a></li>
+					</ul>
+				</div>
+			  <div class="menu-adbeus-container">
+					<ul id="slide-out" class="side-nav" style="left: -250px;">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2025"><a href="#">Accueil</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5057"><a href="#">Ajouter une vidéo</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5057"><a href="#">Changer la photo</a></li>
+					</ul>
+				</div>
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+		  </div>
+		</div>
+	</nav>
+ </div>
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12">
+                 <div class="section">
+										{% block body %}
+
+										{% endblock%}
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav flex-child-menu menu-left">
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li><a href="{{ path('dashboard') }}">Entraînements</a></li>
-{#                        <li><a href="#">Défilé</a></li>#}
-                    </ul>
-{#                    <ul class="nav navbar-nav flex-child-menu menu-right">#}
-{#                        <li class="loginLink"><a href="#">LOG In</a></li>#}
-{#                        <li class="btn signupLink"><a href="#">sign up</a></li>#}
-{#                    </ul>#}
-                </div>
-            </nav>
+            </div>
         </div>
-    </header>
-    <body>
-{#        <div class="buster-light">#}
-            <div class="hero common-hero" style="height: 30%">
-                <h1 style="color: white">Vidéos des entraînements</h1>
-            </div>
-            <div class="page-single">
-                <div class="container">
-                    <div class="row">
-                        {% block body %}{% endblock %}
-                    </div>
-                </div>
-            </div>
-{#        </div>#}
+    </div>
+</div>
 
-        <footer class="ht-footer">
-            <div class="container">
-                <div class="flex-parent-ft">
-{#                    <div class="flex-child-ft item1">#}
-{#                        <a href="index-2.html"><img class="logo" src="images/logo1.png" alt=""></a>#}
-{#                        <p>5th Avenue st, manhattan<br>#}
-{#                            New York, NY 10001</p>#}
-{#                        <p>Call us: <a href="#">(+01) 202 342 6789</a></p>#}
-{#                    </div>#}
-{#                    <div class="flex-child-ft item2">#}
-{#                        <h4>Resources</h4>#}
-{#                        <ul>#}
-{#                            <li><a href="#">About</a></li>#}
-{#                            <li><a href="#">Blockbuster</a></li>#}
-{#                            <li><a href="#">Contact Us</a></li>#}
-{#                            <li><a href="#">Forums</a></li>#}
-{#                            <li><a href="#">Blog</a></li>#}
-{#                            <li><a href="#">Help Center</a></li>#}
-{#                        </ul>#}
-{#                    </div>#}
-{#                    <div class="flex-child-ft item3">#}
-{#                        <h4>Legal</h4>#}
-{#                        <ul>#}
-{#                            <li><a href="#">Terms of Use</a></li>#}
-{#                            <li><a href="#">Privacy Policy</a></li>#}
-{#                            <li><a href="#">Security</a></li>#}
-{#                        </ul>#}
-{#                    </div>#}
-{#                    <div class="flex-child-ft item4">#}
-{#                        <h4>Account</h4>#}
-{#                        <ul>#}
-{#                            <li><a href="#">My Account</a></li>#}
-{#                            <li><a href="#">Watchlist</a></li>#}
-{#                            <li><a href="#">Collections</a></li>#}
-{#                            <li><a href="#">User Guide</a></li>#}
-{#                        </ul>#}
-{#                    </div>#}
-{#                    <div class="flex-child-ft item5">#}
-{#                        <h4>Newsletter</h4>#}
-{#                        <p>Subscribe to our newsletter system now <br> to get latest news from us.</p>#}
-{#                        <form action="#">#}
-{#                            <input type="text" placeholder="Enter your email...">#}
-{#                        </form>#}
-{#                        <a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>#}
-{#                    </div>#}
-                </div>
-            </div>
-            <div class="ft-copyright">
-{#                <div class="ft-left">#}
-{#                    <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>#}
-{#                </div>#}
-{#                <div class="backtotop">#}
-{#                    <p><a href="#" id="back-to-top">Back to top  <i class="ion-ios-arrow-thin-up"></i></a></p>#}
-{#                </div>#}
-            </div>
-        </footer>
+<script type="text/javascript">
+  analytics.track("Viewed Home Page", {"noninteraction":true}, {"library":"analytics-wordpress"});
 
-        <script src="{{ asset('js/jquery.js') }}"></script>
-        <script src="{{ asset('js/plugins.js') }}"></script>
-        <script src="{{ asset('js/plugins2.js') }}"></script>
-        <script src="{{ asset('js/custom.js') }}"></script>
-    </body>
-</html>
+</script>
+<script type="text/javascript" src="https://adbeus.com/wp-content/plugins/curation-ambassadors/assets/js/natural-search.js" id="natural-search-js"></script>
+<script type="text/javascript" id="uwpqsfscript-js-extra">
+/* <![CDATA[ */
+var ajax = {"url":"https:\/\/adbeus.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://adbeus.com/wp-content/plugins/ultimate-wp-query-search-filter/classes/scripts/uwpqsfscript.js" id="uwpqsfscript-js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js" id="jquery-js-js"></script>
+<script type="text/javascript" src="https://adbeus.com/wp-content/themes/adbeus/js/materialize.js" id="materialize-js-js"></script>
+<script type="text/javascript" src="https://adbeus.com/wp-content/themes/adbeus/js/init.js" id="init-js-js"></script>
+<script type="text/javascript" src="https://adbeus.com/wp-content/themes/adbeus/js/isotope.pkgd.min.js" id="isotope-js-js"></script>
+<script type="text/javascript" src="https://adbeus.com/wp-content/themes/adbeus/js/jquery.cookie.js" id="cookie-js-js"></script>
+<script type="text/javascript" src="https://adbeus.com/wp-content/themes/adbeus/js/adbeus.js" id="adbeus-js-js"></script>
+<script type="text/javascript" src="https://adbeus.com/wp-includes/js/wp-embed.min.js" id="wp-embed-js"></script>
+
+
+<div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div><div class="hiddendiv common"></div><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div></body></html>

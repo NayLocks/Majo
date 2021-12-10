@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\src",
+    "\\src\\Controller",
+    "\\templates"
+  ],
+  "SelectedNode": "\\src\\Controller\\DashboardController.php",
+  "PreviewInSolutionExplorer": false
+}
